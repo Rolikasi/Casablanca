@@ -2,106 +2,122 @@
 <html>
     
   <head>
-        <link rel="stylesheet" href="casablanca.css">
+    <link rel="stylesheet" href="casablanca.css">
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Casablanca</title>
   </head>
 
   <body>
-    <section class = main_block>
-        <h1 class= 'main_title'>We've got talent</h1>
-        <hr>
-        <p>here is description</p>
-        <div class='icon-mouse'></div>
-
+    <section class = 'img-button'>
+        <img class = 'c-card__image' src="/img/HERO Img.png" alt="">
+        <div class="main-text">
+        <h1 class= 'c-card__title text--white title--main'>We've got talent</h1>
+        <hr class="main-line">
+        <p class = 'c-card__text text--white text--regular'>
+            Lorem ipsum dolor sit amet, consectetuer adipiscing elit.
+            <br>Aenean commodo ligula eget dolor. Aenean massa.</p>
+        </div>
+        <div class='icon-mouse'>
+            <img  src="/img/Mouse_scroll_ic.svg" alt="mouse svg"></img>
+        </div>    
     </section>
-    <section class = "intro">
-        <h1>Introduction</h1>
+
+    <section class = "c-card">
+        <h1 class = "c-card__title">Introduction</h1>
         <hr>
-        <p>Desription text here</p>
+        <p class = 'c-card__text'>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+            <br>tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim
+            <br>veniam, quis nostrud exercitation ullamco laboris.</p>
     </section>
     <section class="img-button">
-        <img src="" alt="Macbook">
-        <a class="ghost-button" href="#">Pure creativity</a>
+        <img class ="img-button__img" src="/img/[IMG].png" alt="Macbook">
+        <a class="img-button__ghost-button" href="#">Pure creativity</a>
     </section>
-    <section class = "projects">
-        <h2>Some of our work</h2>
+    <section class = "c-card">
+        <h2 class ='c-card__title'>Some of our work</h2>
         <hr>
-        <nav class = "nav-work">
-            <ul>
-                <li>
-                    <a href="">All</a>
-                    <a href="">Branding</a>
-                    <a href="">Web Design</a>
-                    <a href="">Mobile UI</a>
-                    <a href="">Illustrations</a>
-                </li>
+        <nav class = "work">
+            <ul class = 'work__list'>
+                <li><a class = 'work__item work__item--current' href="">All</a></li>
+                <li><a class = 'work__item' href="">Branding</a></li>
+                <li><a class = 'work__item' href="">Web Design</a></li>
+                <li><a class = 'work__item' href="">Mobile UI</a></li>
+                <li><a class = 'work__item' href="">Illustrations</a></li>
             </ul>
         </nav>
-        <div class = "project_grid">
-            <a href=""><img src="" alt=""></a>
-            <a href=""><img src="" alt=""></a>
-            <a href=""><img src="" alt=""></a>
-            <a href=""><img src="" alt=""></a>
-            <a href=""><img src="" alt=""></a>
-            <a href=""><img src="" alt=""></a>
+        <div class = "work-grid">
+            <a href=""><img class = "work-grid__image" src="/img/grid1.png" alt=""></a>
+            <a href=""><img class = "work-grid__image" src="/img/grid2.png" alt=""></a>
+            <a href=""><img class = "work-grid__image" src="/img/grid3.png" alt=""></a>
+            <a href=""><img class = "work-grid__image" src="/img/grid4.png" alt=""></a>
+            <a href=""><img class = "work-grid__image" src="/img/grid5.png" alt=""></a>
+            <a href=""><img class = "work-grid__image" src="/img/grid6.png" alt=""></a>
         </div>
-        <a class="ghost-button" id='black_button' href="#">Show me more</a>
+        <a class="img-button__ghost-button ghostbutton--black" href="#">Show me more</a>
     </section>
     <section class = "img-button">
-        <img src="" alt="">
-        <a class="ghost-button" href="#">We're here to help</a>
+        <img class = "img-button__img" src="/img/[IMG]help.png" alt="">
+        <a class="img-button__ghost-button" href="#">We're here to help</a>
     </section>
-    <section class = 'clients'>
-        <h2>Our clients</h2>
+    <section class = 'c-card c-card--grey'>
+        <h2 class = "c-card__title">Our clients</h2>
         <hr>
-        <div class = 'client-grid'>
-            <a href=""><img src="" alt=""></a>
-            <a href=""><img src="" alt=""></a>
-            <a href=""><img src="" alt=""></a>
-            <a href=""><img src="" alt=""></a>
-            <a href=""><img src="" alt=""></a>
-            <a href=""><img src="" alt=""></a>
+        <div class = 'clients-grid'>
+            <a href=""><img src="/img/logo6w.svg" alt=""></a>
+            <a href=""><img src="/img/Samsung_Logo.svg" alt=""></a>
+            <a href=""><img src="/img/Flickr_logo.svg" alt=""></a>
+            <a href=""><img src="/img/foursquare-logo.svg" alt=""></a>
+            <a href=""><img src="/img/pinterest_logo_red.svg" alt=""></a>
         </div>
     </section>
-    <section class ='about-us'>
-        <h2>About us</h2>
+    <section class ='c-card'>
+        <h2 class = "c-card__title">About us</h2>
         <hr>
-        <p>Here is description text</p>
+        <p class = 'c-card__text'>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+                <br>tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim
+                <br>veniam, quis nostrud exercitation ullamco laboris.</p>
         <div class = 'workers-grid'>
-            <a href="">
-                <img src="" alt="John Ceo">
+            <div class='workers-grid__c'>
+                <img class="workers-grid__image" src="/img/john.png" alt="John Ceo">
+                <div class = 'workers-grid__header'>
                     <h2>John</h2>
                     <p>Ceo/founder</p>
-            </a>
-            <a href="">
-                <img src="" alt="Helga designer">
+                </div>
+            </div>
+            <div class ='workers-grid__c'>
+                <img class="workers-grid__image" src="/img/Helga.png" alt="Helga designer">
+                <div class = 'workers-grid__header'>
                     <h2>Helga</h2>
                     <p>Designer</p>
-                    
-            </a>
-            <a href="">
-                <img src="" alt="Lola developer">
+                </div>
+            </div>
+            <div class = 'workers-grid__c'>
+                <img class="workers-grid__image" src="/img/Lola.png" alt="Lola developer">
+                <div class = 'workers-grid__header'>
                     <h2>Lola</h2>
                     <p>Developer</p>
-            </a>
-            <a href="">
-                <img src="" alt="">
-                    <h2>We are hiring</h2>
+                </div>
+            </div>
+            <div class = 'workers-grid__c'>
+                <img class="workers-grid__image" src="" alt="">
+                <div class = 'workers-grid__header'>
+                    <h2 class = "worker-item__title">We are hiring</h2>
                     <hr>
-                    <a class="ghost-button" href="#">Apply</a>
-            </a>
+                    <a class="img-button__ghost-button ghostbutton--black ghostbutton--s" href="#">Apply</a>
+                </div>
+            </div>
         </div>
     </section>
-    <section class = "video">
-            <iframe width="420" height="315"
+    <section class = "c-card">
+            <iframe width="1600" height="315"
             src="https://www.youtube.com/embed/tgbNymZ7vqY">
             </iframe> 
     </section>
-    <section class = "Why-choose-us">
-        <h2>Why choose us</h2>
+    <section class = "c-card">
+        <h2 class = "c-card__title">Why choose us</h2>
         <hr>
-        <p>Description text</p>
+        <p class = "c-card__text">Lorem ipsum dolor sit amet, consectetuer adipiscing elit.  Aene</p>
         <div class = "why-grid">
             <div class="advantages" id="app_design">
                 <img src="" alt="">
@@ -127,14 +143,14 @@
         </div>
     </section>
     <section class = "img-button">
-            <img src="" alt="Mac">
-            <a class="ghost-button" href="#">Get a quote now</a>
+            <img class = 'img-button__img' src="/img/[IMG]mac.png" alt="Mac">
+            <a class="img-button__ghost-button" href="#">Get a quote now</a>
     </section>
     
-    <section class = "Get-touch">
-        <h2>Get in Touch</h2>
+    <section class = "c-card">
+        <h2 class = "c-card__title">Get in Touch</h2>
         <hr>
-        <p>description here</p>
+        <p class = "c-card__text">Lorem ipsum dolor sit amet, consectetuer adipiscing elit.  Aene</p>
         <div class = 'contacts-grid'>
             <div class = 'location'>
                 <h3>Our location</h3>
