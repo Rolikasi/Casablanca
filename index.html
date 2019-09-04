@@ -2,6 +2,7 @@
 <html>
     
   <head>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="casablanca.css">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -21,7 +22,7 @@
             <br>Aenean commodo ligula eget dolor. Aenean massa.</p>
         </div>
             <div class='icon-mouse'>
-                <img  src="/img/Mouse_scroll_ic.svg" alt="mouse svg"></img>
+                <img  src="img/Mouse_scroll_ic.svg" alt="mouse svg"></img>
             </div> 
         
            
@@ -85,58 +86,66 @@
             <div class='workers-grid__c'>
                 <img class="workers-grid__image" src="img/john.png" alt="John Ceo">
                 <div class = 'workers-grid__header'>
-                    <h2>John</h2>
-                    <p>Ceo/founder</p>
+                    <h2 class = "workers-item__text">John</h2>
+                    <p class ='workers-item__text workers-item__text--s'>Ceo/founder</p>
                 </div>
             </div>
             <div class ='workers-grid__c'>
                 <img class="workers-grid__image" src="img/Helga.png" alt="Helga designer">
                 <div class = 'workers-grid__header'>
-                    <h2>Helga</h2>
-                    <p>Designer</p>
+                    <h2 class = "workers-item__text">Helga</h2>
+                    <p class ='workers-item__text workers-item__text--s'>Designer</p>
                 </div>
             </div>
             <div class = 'workers-grid__c'>
                 <img class="workers-grid__image" src="img/Lola.png" alt="Lola developer">
                 <div class = 'workers-grid__header'>
-                    <h2>Lola</h2>
-                    <p>Developer</p>
+                    <h2 class = "workers-item__text">Lola</h2>
+                    <p class ='workers-item__text workers-item__text--s'>Developer</p>
                 </div>
             </div>
             <div class = 'workers-grid__c'>
                 <img class="workers-grid__image" src="" alt="">
                 <div class = 'workers-grid__header workers-grid__header--apply-job'>
-                    <h2 class = "worker-item__title">We are hiring</h2>
+                    <h2 class = "workers-item__text workers-item__text--black">We are hiring</h2>
                     <hr>
                     <a class="img-button__ghost-button ghostbutton--black ghostbutton--s" href="#">Apply</a>
                 </div>
             </div>
         </div>
     </section>
-    <section class = "c-card">
-            <iframe width="1600" height="315"
-            src="https://www.youtube.com/embed/tgbNymZ7vqY">
+    <section class = "c-card c-card--padding-0" >
+            <iframe class = "video" 
+            src="https://www.youtube.com/embed/tgbNymZ7vqY" frameborder="0">
             </iframe> 
     </section>
     <section class = "c-card">
         <h2 class = "c-card__title">Why choose us</h2>
         <hr>
-        <p class = "c-card__text">Lorem ipsum dolor sit amet, consectetuer adipiscing elit.  Aene</p>
+        <p class = 'c-card__text'>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+            <br>tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim
+            <br>veniam, quis nostrud exercitation ullamco laboris.</p>
         <div class = "why-grid">
-            <div class="advantages" id="app_design">
-                <img src="" alt="">
-                    <h3>App Design</h3>
-                    <p>here comments</p>
+            <div class="why-grid__advantages" id="app_design">
+                <img class='img-streched' src="img/iPhone 5c.svg" alt="iPhone icon">
+                    <h3 class="why-grid__text">App Design</h3>
+                    <p class="why-grid__text why-grid__text--s">Lorem ipsum dolor sit amet, consectetur 
+                        <br>adipisicing elit, sed do eiusmod tempor<br>
+                        ilabore et dolore.</p>
             </div>
-            <div class="advantages" id="responsive-layout">
-                <img src="" alt="">
-                    <h3>Responsive Layout</h3>
-                    <p>here comments</p>
+            <div class="why-grid__advantages" id="responsive-layout">
+                <img class='img-streched' src="img/iPad Air.svg" alt="iPad icon">
+                    <h3 class="why-grid__text">Responsive Layout</h3>
+                    <p class="why-grid__text why-grid__text--s">Lorem ipsum dolor sit amet, consectetur 
+                            <br>adipisicing elit, sed do eiusmod tempor<br>
+                            ilabore et dolore.</p>
             </div>
-            <div class="advantages" id="advantages">
-                <img src="" alt="">
-                    <h3>Pixel Perfect Design</h3>
-                    <p>here comments</p>
+            <div class="why-grid__advantages" id="advantages">
+                <img class='img-streched' src="img/Macbook Pro.png" alt="Macbook icon">
+                    <h3 class="why-grid__text">Pixel Perfect Design</h3>
+                    <p class="why-grid__text why-grid__text--s">Lorem ipsum dolor sit amet, consectetur 
+                            <br>adipisicing elit, sed do eiusmod tempor<br>
+                            ilabore et dolore.</p>
             </div>
         </div>
         <div class = "dotstyle dotstyle-fillup">
@@ -154,21 +163,32 @@
     <section class = "c-card">
         <h2 class = "c-card__title">Get in Touch</h2>
         <hr>
-        <p class = "c-card__text">Lorem ipsum dolor sit amet, consectetuer adipiscing elit.  Aene</p>
+        <p class = 'c-card__text'>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+                <br>tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim
+                <br>veniam, quis nostrud exercitation ullamco laboris.</p>
         <div class = 'contacts-grid'>
             <div class = 'location'>
-                <h3>Our location</h3>
-                <p>174 Mimosa ST. NW<br>
+                <div class ="location__text">
+                <h3 class = "c-card__title c-card__title--s add-padding">Our location</h3>
+                <p class = "c-card__text add-padding">174 Mimosa ST. NW<br>
                     Casablanca, MA 20370<br> 
                     (212) 123 456 7<br>
                      Samir Ti</p>
+                     <div class = 'icon-grid'>
+                            <a class = 'fa fa-twitter' href=""> </a>
+                            <a class = 'fa fa-facebook' href=""> </a>
+                            <a class = 'fa fa-linkedin' href=""></a>
+                            <a class = 'fa fa-vimeo' href=""></a>
+                            <a class = 'fa fa-behance' href=""></a>
+                        </div>
+                    </div>
             </div>
-            <div class = fillform>
-                <form>
-                    <input type="text" name="field1" placeholder="Name" />
-                    <input type="email" name="field2" placeholder="Email" />
-                    <textarea name="field3" placeholder="Message"></textarea>                        
-                    <input type="submit" value="Send" />
+            <div class = 'fillform'>
+                <form class = "form-grid">
+                    <input class = "form-grid__input" type="text" name="field1" placeholder="Name" required/>
+                    <input class = "form-grid__input" type="email" name="field2" placeholder="Email" required/>
+                    <textarea class ='form-grid__input form-grid__message' rows = 1 name="field3" placeholder="Message"></textarea>                        
+                    <input type='submit' class ='submit-button' value ="Send"></submit>
                 </form>
             </div>
         </div>
