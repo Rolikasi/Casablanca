@@ -47,7 +47,10 @@
 	transform: translate(-50%, -50%);
 }
 .icon-mouse{
-	display: inline-block;
+	top: 92%;
+	position: absolute;
+	left: 50%;
+	transform: translate(-50%, -50%);
 }
 
 hr{
@@ -205,9 +208,13 @@ hr{
 
 .workers-grid__header{
 	position: absolute;
-  	bottom: 8px;
-  	left: 45%;
+  	top: 90%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+}
 
+.workers-grid__header--apply-job{
+	top:50%;
 }
 
 .why-grid{
