@@ -81,6 +81,7 @@
 	text-decoration: none;
 }
 .c-card {
+	position: relative;
     text-align: center;
     justify-content: center;
     width: 100%;
@@ -97,6 +98,7 @@
 	background: #f4f4f4;
 }
 .c-card__image{
+
 	z-index:0;
 	object-fit: cover;
 	width: 100%;
@@ -174,10 +176,10 @@
 	top: 50%;
 	left: 50%;
 	transform: translate(-50%, -50%);
-	width: 350px;
-	font-size:3rem;
+	width: 320px;
+	font-size:30px;
 	font-weight: bold;
-	padding: 25px;
+	padding: 20px;
 	color: #fff;
 	border: 2px solid #fff;
 	text-align: center;
@@ -200,9 +202,8 @@
 	color:black;
 	border: 2px solid black;
 	padding: 10px;
-	width: 250px;
-	font-size: 2.4rem;
-	position: static;
+	width: 200px;
+	font-size: 24px;
 }
 .ghostbutton--black:hover{
 	background-color: #f2f2f2;
@@ -310,8 +311,8 @@
 
 .clients-grid {
 	display:grid;
-	grid-template-columns:repeat(auto-fit, minmax(100px, 1fr)) ;
-	grid-gap: 1.5rem;
+	grid-template-columns:repeat(5,1fr) ;
+	grid-gap: 10px;
 	max-width: 1200px;
 	width: 100%;
 	margin: auto;
@@ -452,11 +453,19 @@ ol.carousel-indicators li.active{
 }
 .why-grid__text{
 	font-family: Amble;
-	font-size: 2.4rem;
+	font-size: 24px;
+	padding:10px;
+
+}
+.why-grid__text--s{
+	font-size:16px;
+	padding:10px;
+	margin: 10px;
 }
 
-.why-grid__text--s{
-	font-size:1.6rem;
+.why-grid__advantages{
+	margin:10px;
+	margin-top: 20px;
 }
 .location {
 	background-color: #f2f2f2;
@@ -472,7 +481,7 @@ ol.carousel-indicators li.active{
 }
 .contacts-grid{
 	display:grid;
-	grid-template-areas: 'contacts form';
+	grid-template-columns: 1fr 2fr;
 	padding-top: 8rem;
 }
 
@@ -499,13 +508,17 @@ ol.carousel-indicators li.active{
 
 }
 .form-grid__input {
-	margin: 8rem;
+	margin: 80px;
+	margin-top: 8rem;
 	margin-bottom: 4rem;
+	padding:0px;
+	padding-left: 5px;
+
 	box-sizing: border-box;
 	border: none;
 	border-bottom: 2px solid #afafaf;
 	font-family: Amble;
-	font-style: italic;
+
 	font-size: 1.8rem;
 	height: auto;
 	background-color: #e4e4e4;
@@ -513,10 +526,11 @@ ol.carousel-indicators li.active{
 }
 
 .form-grid__message {
+	height: 25px;
 	grid-column: 1/3;
 	resize: none;
 	line-height: 1;
-	padding: 0px;
+
 
 }
 .submit-button-c{
@@ -528,10 +542,10 @@ ol.carousel-indicators li.active{
 	left:20%;
 	font-family: Amble;
 	position: relative;
-	width: 200px;
-	font-size:3rem;
+	width: 150px;
+	font-size:24px;
 	font-weight: bold;
-	padding: 10px;
+	padding: 5px;
 	color: #000;
 	border: 2px solid #000;
 	text-align: center;
@@ -557,6 +571,17 @@ ol.carousel-indicators li.active{
 	padding-bottom:0px;
 }
 
+.location__text{
+	margin: 10px;
+}
+
+.clients-grid__img{
+	margin: 20px 0px;
+}
+.hiring-btn{
+	top:90%;
+	margin-top: 50px;
+}
 
 @media  (max-width: 767px){
 
@@ -608,7 +633,12 @@ ol.carousel-indicators li.active{
 		top:70%;
 	}
 	.clients-grid{
-		grid-template-columns: auto;
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+
+		text-align: center;
+		justify-content: center;
 	}
 
 	.workers-grid__c{
@@ -619,7 +649,7 @@ ol.carousel-indicators li.active{
 	}
 
 	.img-button__ghost-button{
-		max-width: 300px;
+		max-width: 280px;
 		padding: 5px;
 	}
 
@@ -652,10 +682,9 @@ ol.carousel-indicators li.active{
 	.submit-button{
 		left: 0;
 		margin-bottom: 0px;
+
 	}
-	.clients-grid__img{
-		max-width: 160px;
-	}
+
 
 
 }
@@ -675,8 +704,16 @@ ol.carousel-indicators li.active{
 
 		}
 		.why-grid{
-			max-width: 70vh;
-		}
+			display:flex;
+			flex-direction: column;
+			align-items: center;
+			justify-content: center;
+			grid-gap: 0px;
+			margin-top: 2rem;
+			margin-bottom: 2rem;
+			padding: 3rem;
+			max-width: 70%;
+			}
 	.contacts-grid,
 	.work__list
 	{
@@ -699,6 +736,8 @@ ol.carousel-indicators li.active{
 		top:70%;
 	}
 
+
+
 	.first-c {
 		overflow: hidden;
 	}
@@ -720,23 +759,26 @@ ol.carousel-indicators li.active{
 		width: 100%;
 		padding: 4rem;
 		text-align: center;
+		position: relative;
+		overflow: hidden;
 	}
 	.icon-grid{
 		justify-content: center;
 	}
 
 	.submit-button{
-		left:20%;
+		left:17%;
 		margin-bottom: 0px;
 	}
-	.clients-grid__img{
+
+	.clients-grid__img>object{
 		max-width: 100px;
 	}
 
 }
 
 @media  (min-width: 960px) and (max-width: 1279px){
-	.work-grid, .workers-grid{
+	.work-grid{
 		grid-template-columns: auto auto;
 		grid-gap: 1.5rem;
 		margin-top: 2rem;
@@ -745,9 +787,17 @@ ol.carousel-indicators li.active{
 		max-width: 50vh;
 		}
 
-		.why-grid{
-			max-width: 90vh;
-		}
+		.workers-grid{
+
+			grid-template-columns: auto auto;
+			grid-gap: 1.5rem;
+			margin-top: 2rem;
+			margin-bottom: 2rem;
+			padding: 3rem;
+			max-width: 70vh;
+
+			}
+
 
 
 	.img-button__ghost-button{
@@ -779,6 +829,7 @@ ol.carousel-indicators li.active{
 
 	.location, .fillform{
 		width: 100%;
+		position: relative;
 
 		text-align: center;
 	}
@@ -790,9 +841,10 @@ ol.carousel-indicators li.active{
 		left:20%;
 		margin-bottom: 2rem;
 	}
-	.clients-grid__img{
-		max-width: 150px;
+	.clients-grid__img>object{
+		max-width: 120px;
 	}
+
 
 
 
