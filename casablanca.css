@@ -115,6 +115,9 @@
 .c-card--grey{
 	background: #f4f4f4;
 }
+.c-card--black{
+    background-color: #222222;
+}
 .c-card__image{
 
 	z-index:0;
@@ -162,6 +165,8 @@
 .c-card__title--s{
 	font-size: 2.4rem;
 }
+
+
 .title--main {
 	font-size: 4.8rem;
 }
@@ -172,6 +177,9 @@
 	font-size: 2.2rem;
 	margin-bottom: 0px;
 	margin-top: 0px;
+}
+.c-card__text--s{
+	font-size: 16px;
 }
 
 .text--regular {
@@ -607,6 +615,9 @@ ol.carousel-indicators li.active{
 	top:90%;
 	margin-top: 50px;
 }
+.footer{
+	padding: 20px;
+}
 
 @media  (max-width: 767px){
 
@@ -717,6 +728,11 @@ ol.carousel-indicators li.active{
 
 	}
 
+	.footer{
+		display: none;
+	}
+
+
 
 
 }
@@ -816,6 +832,7 @@ ol.carousel-indicators li.active{
 	.form-grid__input {
 		margin: 60px;
 	}
+
 }
 
 
