@@ -134,7 +134,7 @@
 	z-index: 1;
 }
 .icon-mouse{
-	top: 92%;
+	bottom: 1%;
 	position: absolute;
 	left: 50%;
 	transform: translate(-50%, -50%);
@@ -633,6 +633,10 @@ ol.carousel-indicators li.active{
 	margin-bottom: 2rem;
 	padding: 3rem;
 
+
+	}
+	.why-grid .why-grid__advantages{
+		max-width: 500px;
 	}
 
 	.work-grid>a, .workers-grid>a{
