@@ -2,6 +2,14 @@
     --main-black: #000000;
     --main-white: #eeeeee;
   }
+  @font-face {
+	font-family: "Big John";
+	src: url(fonts/BIG-JOHN.otf) format("opentype");
+  }
+  @font-face {
+	font-family: "Slim Joe";
+	src: url(fonts/Slim-Joe.otf) format("opentype");
+  }
 
   html {
 
@@ -50,6 +58,8 @@
 	text-align: start;
 }
 .dropdown-content{
+	position: absolute;
+
 	height: 0;
 	width: auto;
 	opacity: 0;
@@ -60,9 +70,10 @@
 }
 
 .dropdown-content a{
+
 	text-decoration: none;
 	color: #fff;
-	display: block;
+	display: none;
 	text-align:start;
 	font-size: 1.8rem;
 }
@@ -72,14 +83,21 @@
 	width: auto;
 	transition: opacity 0.5s ease-in;
 	opacity: 1;
-	z-index: 1;
+	z-index: 4;
+}
+
+.nav:hover .dropdown-content a{
+	display: block;
 
 }
+
+
 
 .dropdown-content a:hover {
 	opacity: 0.7;
 	text-decoration: none;
 }
+
 .c-card {
 	position: relative;
     text-align: center;
@@ -113,6 +131,7 @@
 	top: 40%;
 	left: 50%;
 	transform: translate(-50%, -50%);
+	z-index: 1;
 }
 .icon-mouse{
 	top: 92%;
@@ -185,8 +204,8 @@
 	text-align: center;
 	outline: none;
 	text-decoration: none;
-	transition: background-color 0.2s ease-out,
-				color 0.2s ease-out;
+	transition: background-color 0.3s ease-out,
+				color 0.3s ease-out;
   }
   .img-button__ghost-button:hover,
   .img-button__ghost-button:active {
@@ -306,6 +325,11 @@
 
 .work-grid a:hover .work-grid__image{
 	opacity: 0.3;
+}
+
+.work-grid__button{
+	position: relative;
+	margin-top: 40px;
 }
 
 
@@ -595,8 +619,7 @@ ol.carousel-indicators li.active{
 	.contacts-grid,
 	.form-grid,
 	.why-grid,
-	.work__list,
-	.work-grid
+	.work__list
 	{
 		display:flex;
 		flex-direction: column;
@@ -609,14 +632,14 @@ ol.carousel-indicators li.active{
 	margin-top: 2rem;
 	margin-bottom: 2rem;
 	padding: 3rem;
-	max-width: 70vh;
+
 	}
 
 	.work-grid>a, .workers-grid>a{
 		margin: 1.5rem;
 	}
 
-	.workers-grid{
+	.workers-grid, .work-grid{
 		display: grid;
 		grid-template-columns: auto;
 		grid-template-rows: max-content;
@@ -700,7 +723,7 @@ ol.carousel-indicators li.active{
 		margin-top: 2rem;
 		margin-bottom: 2rem;
 		padding: 3rem;
-		max-width: 70vh;
+		max-width: 70%;
 
 		}
 		.why-grid{
@@ -784,7 +807,7 @@ ol.carousel-indicators li.active{
 		margin-top: 2rem;
 		margin-bottom: 2rem;
 		padding: 3rem;
-		max-width: 50vh;
+		max-width: 50%;
 		}
 
 		.workers-grid{
@@ -794,7 +817,7 @@ ol.carousel-indicators li.active{
 			margin-top: 2rem;
 			margin-bottom: 2rem;
 			padding: 3rem;
-			max-width: 70vh;
+			max-width: 70%;
 
 			}
 
